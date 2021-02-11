@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap");
+@font-face {
+  font-family: "MyriadPro";
+  src: local("MyriadPro"), url(./fonts/MyriadPro-Bold.otf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+  scroll-behavior: smooth;
+}
+
+.main-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a3132;
+  height: 70px;
+  border-bottom: 2px solid #90afc5;
+  z-index: 10;
+}
+
+.main-nav .toggle-button {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 27px;
+}
+
+.main-nav .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #90afc5;
+  border-radius: 10px;
+}
+
+.nav-links {
+  display: flex;
+  position: relative;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  list-style: none;
+  text-decoration: none;
+  color: #90afc5;
+  padding: 1.5rem;
+  display: block;
+  font-size: 22px;
+  height: 100%;
+}
+
+.nav-links li a:hover {
+  background-color: #336b87;
+  height: 100%;
+}
+
+.nav-links li .Fa {
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */
