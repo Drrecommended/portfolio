@@ -130,13 +130,51 @@ section {
   width: 500px;
 }
 
-.about-me {
-  display: grid;
+#about {
+  background-color: #334E5F;
 }
 
-.pic-of-me {
+.about-me {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "me me head head ." "info info info info info";
+  background-color: white;
+  border-radius: 3px;
+}
+
+.about-me .pic-of-me {
   border-radius: 50%;
-  width: 400px;
+  justify-self: center;
+  align-self: center;
+  grid-area: me;
+  width: 90%;
+  min-width: 20rem;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.about-me .I-AM {
+  grid-area: head;
+  justify-self: center;
+  align-self: center;
+  width: 83.7%;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+
+.about-me .my-info {
+  background-color: blue;
+  grid-area: info;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  font-size: 1.5rem;
 }
 
 input[type="text"],
@@ -207,6 +245,20 @@ form {
 .footer {
   height: 30vh;
   background-color: #334E5F;
+}
+
+@media only screen and (max-width: 550px) {
+  .pic-of-me {
+    display: none;
+  }
+  .about-me {
+    grid-template-columns: 1fr;
+    grid-template-areas: " head" "info";
+  }
+  .I-AM {
+    width: 100%;
+    margin: 10%;
+  }
 }
 
 @media (max-width: 800px) {

@@ -15,6 +15,8 @@
   scroll-behavior: smooth;
 }
 
+
+
 section {
   padding: 5em 2em;
   height: 100vh;
@@ -28,6 +30,12 @@ $light: #90afc5;
 $dark: #2a3132;
 $accent: #334E5F;
 $outline: #763626;
+$regFont: 300;
+$boldFont: 900;
+$h1: 3rem;
+$h2: 2.25rem;
+$h3: 1.25rem;
+$body: 1.5rem;
 
 //Nav bar styling
 .navbar {
@@ -135,13 +143,53 @@ $outline: #763626;
 }
 
 //About me section styling
+#about {
+  background-color: $accent;
+}
+
+
 .about-me {
   display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas: 
+  "me me head head ."
+  "info info info info info";
+  background-color: white;
+  border-radius: 3px;
+  .pic-of-me {
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+    grid-area: me;
+    width: 90%;
+    min-width: 20rem;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .I-AM {
+    grid-area: head;
+    justify-self: center;
+    align-self: center;
+    width: 83.7%;
+    text-align: center;
+    font-size: $h2;
+    font-weight: $boldFont;
+  }
+  .my-info {
+    background-color: blue;
+    grid-area: info;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    font-size: $body;
+  }
 }
-.pic-of-me {
-  border-radius: 50%;
-  width: 400px;
-}
+
 
 //Form section styling
 
@@ -210,13 +258,28 @@ form {
   background-color: $accent;
 }
 
+@media only screen and (max-width: 550px) {
+  .pic-of-me {
+    display: none;
+  }
+  .about-me {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    " head"
+    "info";
+  }
+
+  .I-AM {
+    width: 100%;
+    margin: 10%;
+  }
+}
 
 
 
 
 
-
-@media (max-width: 800px) {
+@media only(max-width: 800px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
