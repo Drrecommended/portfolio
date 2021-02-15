@@ -14,11 +14,33 @@
 }
 
 section {
-  padding: 5em 2em;
+  padding: 5em 1em;
   height: 100vh;
   width: 100%;
   overflow: auto;
   border-bottom: 1px solid #90afc5;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+.header-title {
+  background-color: #90afc5;
+  border: 2px solid white;
+  color: #2a3132;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+  border-radius: 3px;
+  max-width: 500px;
+  width: 90%;
+}
+
+a:visited {
+  color: #763626;
 }
 
 .navbar {
@@ -28,9 +50,8 @@ section {
   align-items: center;
   background-color: transparent;
   color: white;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  z-index: 10;
   justify-content: space-between;
 }
 
@@ -55,12 +76,14 @@ section {
 
 .navbar-links ul li:hover {
   background-color: #555;
+  border-radius: 3px;
 }
 
 .navbar-links ul li a {
   display: block;
   text-decoration: none;
   color: white;
+  margin-left: 20px;
   padding: 1rem;
 }
 
@@ -89,7 +112,7 @@ section {
 }
 
 .name-styling {
-  font-size: calc(22px + 9vw);
+  font-size: calc(15px + 9vw);
   text-transform: uppercase;
   font-family: "Titillium Web", sans-serif;
   background-color: #2a3132;
@@ -103,23 +126,24 @@ section {
   white-space: nowrap;
   -webkit-background-clip: text;
   -webkit-text-stroke: 1.5px white;
-  text-align: center;
 }
 
 .my-projects {
+  margin: auto;
   background-color: #2a3132;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Ccircle stroke='%23763626' vector-effect='non-scaling-stroke' id='a' fill='none' stroke-width='8.6' r='315'/%3E%3Cuse id='f' href='%23a' stroke-dasharray='100 100 100 9999'/%3E%3Cuse id='b' href='%23a' stroke-dasharray='250 250 250 250 250 9999'/%3E%3Cuse id='e' href='%23a' stroke-dasharray='1000 500 1000 500 9999'/%3E%3Cuse id='g' href='%23a' stroke-dasharray='1500 9999'/%3E%3Cuse id='h' href='%23a' stroke-dasharray='2000 500 500 9999'/%3E%3Cuse id='j' href='%23a' stroke-dasharray='800 800 800 800 800 9999'/%3E%3Cuse id='k' href='%23a' stroke-dasharray='1200 1200 1200 1200 1200 9999'/%3E%3Cuse id='l' href='%23a' stroke-dasharray='1600 1600 1600 1600 1600 9999'/%3E%3C/defs%3E%3Cg transform='translate(1000 750)' %3E%3Cg transform='rotate(201.6 0 0)' %3E%3Ccircle fill='%23763626' r='10'/%3E%3Cg transform='rotate(-132 0 0)'%3E%3Cuse href='%23f' transform='scale(.1) rotate(50 0 0)' /%3E%3Cuse href='%23f' transform='scale(.2) rotate(100 0 0)' /%3E%3Cuse href='%23f' transform='scale(.3) rotate(150 0 0)' /%3E%3C/g%3E%3Cg transform='rotate(-22.8 0 0)'%3E%3Cuse href='%23b' transform='scale(.4) rotate(200 0 0)' /%3E%3Cuse href='%23z' transform='scale(.5) rotate(250 0 0)' /%3E%3C/g%3E%3Cg id='z' transform='rotate(59.4 0 0)'%3E%3Cg transform='rotate(126 0 0)'%3E%3Cuse href='%23b'/%3E%3Cuse href='%23b' transform='scale(1.2) rotate(90 0 0)' /%3E%3Cuse href='%23b' transform='scale(1.4) rotate(60 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.6) rotate(120 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.8) rotate(30 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg id='y' transform='rotate(102.6 0 0)'%3E%3Cg transform='rotate(75.6 0 0)'%3E%3Cuse href='%23e' transform='scale(1.1) rotate(20 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.3) rotate(-40 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.5) rotate(60 0 0)' /%3E%3Cuse href='%23h' transform='scale(1.7) rotate(-80 0 0)' /%3E%3Cuse href='%23j' transform='scale(1.9) rotate(100 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg transform='rotate(-151.2 0 0)'%3E%3Cg transform='rotate(-59.4 0 0)'%3E%3Cg transform='rotate(-136.8 0 0)'%3E%3Cuse href='%23h' transform='scale(2) rotate(60 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.1) rotate(120 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.3) rotate(180 0 0)'/%3E%3Cuse href='%23h' transform='scale(2.4) rotate(240 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.5) rotate(300 0 0)'/%3E%3C/g%3E%3Cuse href='%23y' transform='scale(2) rotate(180 0 0)' /%3E%3Cuse href='%23j' transform='scale(2.7)'/%3E%3Cuse href='%23j' transform='scale(2.8) rotate(45 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.9) rotate(90 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.1) rotate(135 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.2) rotate(180 0 0)'/%3E%3C/g%3E%3Cuse href='%23k' transform='scale(3.3) rotate(225 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.5) rotate(270 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.6) rotate(315 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.7)'/%3E%3Cuse href='%23k' transform='scale(3.9) rotate(75 0 0)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 6rem;
-  height: 100vh;
+  height: 100%;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
 }
 
 .projects li {
@@ -127,22 +151,53 @@ section {
   border-radius: 0.5rem;
   list-style: none;
   background-color: white;
-  width: 500px;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.projects li p {
+  margin: auto;
+  padding: 0px 20px 0px 20px;
+  width: 90%;
+}
+
+.projects li .project-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  font-size: 18px;
+  color: #334e5f;
+}
+
+figcaption {
+  width: auto;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
 }
 
 #about {
-  background-color: #334E5F;
+  background-color: #334e5f;
+  height: 100%;
 }
 
 .about-me {
   display: grid;
-  height: 100vh;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+  margin: auto;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 2fr auto;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "me me head head ." "info info info info info";
+  grid-template-areas: "me me head head" "info info info info";
   background-color: white;
   border-radius: 3px;
+  overflow: auto;
 }
 
 .about-me .pic-of-me {
@@ -152,22 +207,25 @@ section {
   grid-area: me;
   width: 90%;
   min-width: 20rem;
+  max-width: 20rem;
   margin-left: 50px;
   margin-top: 50px;
+  box-shadow: -6px 10px 20px 3px rgba(0, 0, 0, 0.61);
 }
 
 .about-me .I-AM {
   grid-area: head;
+  text-decoration: underline;
   justify-self: center;
   align-self: center;
   width: 83.7%;
   text-align: center;
+  margin-right: 40px;
   font-size: 2.25rem;
   font-weight: 900;
 }
 
 .about-me .my-info {
-  background-color: blue;
   grid-area: info;
   display: flex;
   justify-content: center;
@@ -175,32 +233,15 @@ section {
   width: 100%;
   padding: 50px;
   font-size: 1.5rem;
+  height: 100%;
 }
 
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */
+.resume-link {
+  width: fit-content;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: #4caf50;
+.resume-link .resume {
+  background-color: #763626;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -208,13 +249,49 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+.resume-link .resume:hover {
+  background-color: #90afc5;
+}
+
+#form-body {
+  background-color: white;
+  border-radius: 5px 20px 5px;
+  margin-top: 5%;
+  width: 90%;
+  margin: auto;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #90afc5;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #763626;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #763626;
 }
 
 .check {
-  color: #45a049;
+  color: #763626;
+}
+
+.hire {
+  padding: 12px;
 }
 
 /* Add a background color and some padding around the form */
@@ -230,12 +307,7 @@ input[type="submit"]:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#form-body {
-  background-color: white;
-  border-radius: 5px 20px 5px;
-  margin-top: 5%;
+  height: 100%;
 }
 
 form {
@@ -243,30 +315,37 @@ form {
 }
 
 .footer {
-  height: 30vh;
-  background-color: #334E5F;
+  height: 20vh;
+  background-color: #334e5f;
 }
 
-@media only screen and (max-width: 550px) {
-  .pic-of-me {
-    display: none;
-  }
-  .about-me {
-    grid-template-columns: 1fr;
-    grid-template-areas: " head" "info";
-  }
-  .I-AM {
-    width: 100%;
-    margin: 10%;
-  }
+.footer .footer-links {
+  width: 70%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-top: 4%;
 }
 
-@media (max-width: 800px) {
+.footer .footer-links .Fa {
+  color: white !important;
+  font-size: 30px;
+}
+
+.footer .copyright {
+  font-size: 1.25rem;
+  padding-top: 1.5%;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
-  .toggle-button {
+  .navbar .toggle-button {
     display: flex;
   }
   .navbar-links {
@@ -285,6 +364,42 @@ form {
   }
   .navbar-links.active {
     display: flex;
+  }
+  .about-me {
+    overflow: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "head" "me" "info";
+  }
+  .about-me .I-AM {
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px;
+  }
+  .about-me .pic-of-me {
+    max-width: 1rem;
+    justify-self: center;
+    align-self: center;
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .name-styling {
+    font-size: calc(10px + 11vw);
+  }
+  .about-me {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "head" "info";
+  }
+  .about-me .pic-of-me {
+    display: none;
+  }
+  .about-me .I-AM {
+    width: 100%;
+  }
+  .about-me .my-info {
+    width: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
