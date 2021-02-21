@@ -159,6 +159,7 @@ a:visited {
   margin: auto;
   padding: 0px 20px 0px 20px;
   width: 90%;
+  color: #2a3132;
 }
 
 .projects li .project-links {
@@ -234,6 +235,7 @@ figcaption {
   padding: 50px;
   font-size: 1.5rem;
   height: 100%;
+  color: #2a3132;
 }
 
 .resume-link {
