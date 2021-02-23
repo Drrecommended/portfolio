@@ -64,14 +64,14 @@
       <h2 class="header-title">Featured work</h2>
       <ul class="projects">
         <li>
-          <figure>
+          <div>
             <img
               class="project-image"
               src="recources/space.png"
               alt="Several friends doing a toast"
             />
-            <figcaption><h3>Billions upon billions</h3></figcaption>
-          </figure>
+            <title><h3>Billions upon billions</h3></title>
+          </div>
           <p>
             This is a media player I designed using HTML5, CSS, and vanilla
             Javascipt. You can cycle through songs, skip to different parts of
@@ -265,18 +265,19 @@
     <section id="contact">
       <h2 class="header-title">Get in touch</h2>
       <div id="form-body">
-        <form name="contact" action="POST" data-netlify="true">
+        <form action ="/submit" name="contact" action="POST" data-netlify="true">
           <label for="name">Your name*</label>
-          <input type="text" id="name" name="name" />
+          <input type="text" id="name" name="name" required/>
           <label for="email">Email*</label>
-          <input type="text" id="email" name="email" />
-          <label for="sitename">Your website</label>
-          <input type="text" id="name" name="sitename" />
-          <label for="subject">Message</label>
+          <input type="text" id="email" name="email" required/>
+          <label for="sitename">Your website</label><br>
+          <input type="url" id="sitename" name="sitename"/><br>
+          <label for="message">Message</label>
           <textarea
-            id="subject"
-            name="subject"
+            id="message"
+            name="message"
             placeholder="Write something.."
+            required
           ></textarea>
           <button>Submit</button>
         </form>
