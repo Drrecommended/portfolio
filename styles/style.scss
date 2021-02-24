@@ -31,6 +31,22 @@ $body: 1.5rem;
   background-color: $light;
 }
 
+button {
+  background: none;
+  color: $light;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: all 0.25s;
+  &:hover {
+    border-color: $outline;
+    color: $outline;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.10em);
+    cursor: pointer;
+  }
+}
+
 
 section {
   padding: 5em 1em;
@@ -182,7 +198,6 @@ a:visited{
       text-align: center;
       margin: auto;
       position: relative;
-      font-size: 18px;
       color: $accent;
     }
   }
@@ -252,20 +267,20 @@ figcaption {
     color: $dark;
   }
 }
-.resume-link {
-  width: fit-content;
-  .resume {
-    background-color: $outline;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    &:active {
-      background-color: $light;
-    }
-  }
-}
+// .resume-link {
+//   width: fit-content;
+//   .resume {
+//     background-color: $outline;
+//     color: white;
+//     padding: 12px 20px;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     &:active {
+//       background-color: $light;
+//     }
+//   }
+// }
 
 //Form section styling
 
@@ -419,7 +434,8 @@ form {
 
 @media only screen and (max-width: 550px) {
   .name-styling {
-    font-size: calc(10px + 11vw);
+    font-size: calc(9px + 11vw);
+    transform: scaleY(1.5);
   }
   .about-me {
     grid-template-columns: 1fr;
