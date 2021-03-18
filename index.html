@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tyler French</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <script
       src="https://kit.fontawesome.com/aabc03b925.js"
@@ -27,28 +33,43 @@
       sizes="16x16"
       href="/recources/favicon-16x16.png"
     />
-    <link rel="manifest" href="/recources/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
-    />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <!-- <nav class="navbar">
       <div class="brand-title">Brand Name</div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li class="nav-button"><a href="#">Home</a></li>
-          <li class="nav-button"><a href="#projects">Projects</a></li>
-          <li class="nav-button"><a href="#about">About</a></li>
-          <li class="nav-button"><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="navbar-links">
+        <li class="nav-button"><a href="#">Home</a></li>
+        <li class="nav-button"><a href="#projects">Projects</a></li>
+        <li class="nav-button"><a href="#about">About</a></li>
+        <li class="nav-button"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav> -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-transparent">
+      <a class="navbar-brand text-white" href="#">Navbar</a>
+      <button
+        class="navbar-toggler border-0 boot-button"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon text-white">x</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="oi nav-item nav-link ml-auto pt-5 text-white" href="#">Home</a>
+          <a class="nav-item nav-link ml-auto pt-5 text-white" href="#projects">Features</a>
+          <a class="nav-item nav-link ml-auto pt-5 text-white" href="#about">Pricing</a>
+          <a class="nav-item nav-link ml-auto pt-5 text-white" href="#contact">Disabled</a>
+        </div>
       </div>
     </nav>
     <section class="intro" id="home">
@@ -232,46 +253,30 @@
       <div class="about-me">
         <img class="pic-of-me" src="recources/smallMe.jpg" alt="" />
         <h2 class="I-AM">A little about me...</h2>
-        <ul>
-          <li>
-            <i class="fab fa-react"></i>
-          </li>
-          <li>
-            <i class="fab fa-node"></i>
-          </li>
-          <li>
-            <i class="fab fa-sass"></i>
-          </li>
-        </ul>
         <p class="my-info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          corrupti nam architecto exercitationem culpa sit rerum rem ex
-          temporibus illo quae, asperiores alias nemo nesciunt minima. Debitis
-          commodi reprehenderit error. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Mollitia, aliquid harum quis unde magnam aliquam
-          minus magni fugiat minima odio nam explicabo quidem. Soluta et,
-          consequuntur suscipit corrupti a aperiam. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Mollitia illo tempore minus aut sunt
-          doloremque quam accusamus, tempora magnam, non, omnis delectus in est.
-          Perspiciatis, aspernatur. Quod earum totam temporibus. Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit. Voluptatem fugit ex quam
-          odit, quaerat sapiente dolor cupiditate, ad consequuntur soluta autem
-          unde asperiores itaque? Necessitatibus ab in similique corrupti
-          labore!
+          I am a Web Developer from Las Vegas, Nevada with a working proficiency
+          in HTML, CSS, Sass, Javascript, Bootstrap, Jquery, Node.Js and Git
+          version control. I am familiar with SQL and NoSQL databases. I
+          graduated from PunchCode a front end web development bootcamp in 2020
+          and I have been pushing to better my job <br />
+          <br />
+          I am currently learning ReactJS and bettering my knowledge with APIs
         </p>
-        <a class="resume-link" href="#" download><button class="resume">⬇︎ download resume</button></a>
+        <a class="resume-link" href="#" download
+          ><button class="resume">⬇︎ download resume</button></a
+        >
       </div>
     </section>
     <section id="contact">
       <h2 class="header-title">Get in touch</h2>
       <div id="form-body">
-        <form action ="/submit" name="contact" action="POST" data-netlify="true">
+        <form action="/submit" name="contact" action="POST" data-netlify="true">
           <label for="name">Your name*</label>
-          <input type="text" id="name" name="name" required/>
+          <input type="text" id="name" name="name" required />
           <label for="email">Email*</label>
-          <input type="text" id="email" name="email" required/>
-          <label for="sitename">Your website</label><br>
-          <input type="url" id="sitename" name="sitename"/><br>
+          <input type="text" id="email" name="email" required />
+          <label for="sitename">Your website</label><br />
+          <input type="url" id="sitename" name="sitename" /><br />
           <label for="message">Message</label>
           <textarea
             id="message"
@@ -306,5 +311,20 @@
       <h3 class="copyright">TylerFrench.com ©</h3>
     </footer>
     <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
