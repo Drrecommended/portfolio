@@ -81,10 +81,20 @@ a:visited {
 //Nav bar styling
 .boot-button:focus {
   outline: none !important;
+  box-shadow: none !important;
+  text-align: center  !important;
 }
 
-.navbar {
-  letter-spacing: 10px !important;
+.navbar a {
+  letter-spacing: 3px;
+}
+
+ nav .navbar-brand {
+  color: white !important;
+}
+
+.navbar-default {
+  box-shadow: none !important;
 }
 
 //Landing styling

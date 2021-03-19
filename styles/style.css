@@ -66,6 +66,20 @@ a:visited {
 
 .boot-button:focus {
   outline: none !important;
+  box-shadow: none !important;
+  text-align: center  !important;
+}
+
+.navbar a {
+  letter-spacing: 3px;
+}
+
+nav .navbar-brand {
+  color: white !important;
+}
+
+.navbar-default {
+  box-shadow: none !important;
 }
 
 .intro {
