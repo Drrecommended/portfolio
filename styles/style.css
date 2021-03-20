@@ -67,7 +67,11 @@ a:visited {
 .boot-button:focus {
   outline: none !important;
   box-shadow: none !important;
-  text-align: center  !important;
+}
+
+.boot-button:hover {
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 .navbar a {
@@ -78,8 +82,8 @@ nav .navbar-brand {
   color: white !important;
 }
 
-.navbar-default {
-  box-shadow: none !important;
+.navbar-custom {
+  background-color: #2a3132;
 }
 
 .intro {
@@ -165,7 +169,7 @@ figcaption {
 }
 
 #about {
-  background-color: #334e5f;
+  background-color: #142b32;
   height: 100%;
 }
 
@@ -294,7 +298,7 @@ form {
 
 .footer {
   height: 20vh;
-  background-color: #334e5f;
+  background-color: #142b32;
 }
 
 .footer .footer-links {

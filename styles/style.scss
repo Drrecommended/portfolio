@@ -9,6 +9,7 @@
 //variables
 $light: #90afc5;
 $dark: #2a3132;
+$dark2: #142b32;
 $accent: #334e5f;
 $outline: #763626;
 $regFont: 300;
@@ -82,19 +83,23 @@ a:visited {
 .boot-button:focus {
   outline: none !important;
   box-shadow: none !important;
-  text-align: center  !important;
+}
+
+.boot-button:hover {
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 .navbar a {
   letter-spacing: 3px;
 }
 
- nav .navbar-brand {
+nav .navbar-brand {
   color: white !important;
 }
 
-.navbar-default {
-  box-shadow: none !important;
+.navbar-custom {
+  background-color: $dark;
 }
 
 //Landing styling
@@ -180,7 +185,7 @@ figcaption {
 
 //About me section styling
 #about {
-  background-color: $accent;
+  background-color: $dark2;
   height: 100%;
 }
 
@@ -328,7 +333,7 @@ form {
 
 .footer {
   height: 20vh;
-  background-color: $accent;
+  background-color: $dark2;
   .footer-links {
     width: 70%;
     display: flex;

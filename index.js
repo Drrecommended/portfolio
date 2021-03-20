@@ -8,3 +8,14 @@ function navBar() {
 }
 
 navBar();
+
+
+let names = ['tim', 'kyle', '  cristina', 'connor  ']
+
+function cleanNames(arr) {
+  return arr.map((name) => {
+    console.log(name.trim())
+  })
+}
+
+cleanNames(names)
