@@ -64,6 +64,15 @@ a:visited {
   color: #763626;
 }
 
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scrtoll.scrolled {
+  opacity: 1;
+}
+
 .boot-button:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -83,7 +92,7 @@ nav .navbar-brand {
 }
 
 .navbar-custom {
-  background-color: #2a3132;
+  background-color: #142b32;
 }
 
 .intro {

@@ -79,6 +79,16 @@ a:visited {
   color: $outline;
 }
 
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scrtoll.scrolled {
+  opacity: 1;
+}
+
+
 //Nav bar styling
 .boot-button:focus {
   outline: none !important;
@@ -99,7 +109,7 @@ nav .navbar-brand {
 }
 
 .navbar-custom {
-  background-color: $dark;
+  background-color: $dark2;
 }
 
 //Landing styling
