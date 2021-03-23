@@ -73,26 +73,32 @@ a:visited {
   opacity: 1;
 }
 
-.boot-button:focus {
-  outline: none !important;
-  box-shadow: none !important;
+.navbar-toggle .icon-bar {
+  transition: opacity, top, transform;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+  transition-delay: 0, 200ms, 0;
+  position: relative;
+  top: 0;
+  color: white;
 }
 
-.boot-button:hover {
-  box-shadow: none !important;
-  transform: none !important;
+.navbar-toggle:not(.collapsed) .icon-bar {
+  transition-delay: 0, 0, 200ms;
 }
 
-.navbar a {
-  letter-spacing: 3px;
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  top: 6px;
+  transform: rotate(45deg);
 }
 
-nav .navbar-brand {
-  color: white !important;
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  opacity: 0;
 }
 
-.navbar-custom {
-  background-color: #142b32;
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(4) {
+  top: -6px;
+  transform: rotate(-45deg);
 }
 
 .intro {
