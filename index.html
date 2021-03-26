@@ -37,11 +37,11 @@
   <body>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-custom fixed-top navbar-expand-lg border-bottom border-white"
+      class="navbar navbar-custom fixed-top navbar-expand-sm"
     >
       <div class="navbar-brand">Navbar</div>
       <button
-        class="navbar-toggle collapsed border-0 boot-button"
+        class="navbar-toggler border-0 boot-button"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavAltMarkup"
@@ -49,9 +49,9 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color: #fff; font-size: 28px"></i>
+        </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav ml-auto">
@@ -59,13 +59,13 @@
             <a class="nav-link text-white" href="#">Home</a>
           </li>
           <li class="nav-item ml-auto">
-            <a class="nav-link text-white" href="#projects">Features</a>
+            <a class="nav-link text-white" href="#projects">About</a>
           </li>
           <li class="nav-item ml-auto">
-            <a class="nav-link text-white" href="#about">Pricing</a>
+            <a class="nav-link text-white" href="#about">Projects</a>
           </li>
           <li class="nav-item ml-auto">
-            <a class="nav-link text-white" href="#contact">Disabled</a>
+            <a class="nav-link text-white" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -79,10 +79,15 @@
         </p>
       </div>
     </section>
-    <section class="my-projects scroll-container" id="projects">
-      <div class="about-me scroll-element js-scroll">
+    <section class="my-projects" id="projects">
+      <h2 class="header-title">About me</h2>
+      <div class="about-me">
         <img class="pic-of-me" src="recources/smallMe.jpg" alt="" />
-        <h2 class="I-AM">A little about me...</h2>
+        <ul class="tech-list">
+          <li class="technology">HTML5</li>
+          <li class="technology">CSS/SCSS</li>
+          <li class="technology">Javascipt</li>
+        </ul>
         <p class="my-info">
           I am a Web Developer from Las Vegas, Nevada with a working proficiency
           in HTML, CSS, Sass, Javascript, Bootstrap, Jquery, Node.Js and Git
@@ -93,7 +98,7 @@
           I am currently learning ReactJS and bettering my knowledge with APIs
         </p>
         <a class="resume-link" href="#" download
-          ><button class="resume">⬇︎ download resume</button></a
+          ><button>⬇︎ download resume ⬇︎</button></a
         >
       </div>
     </section>
