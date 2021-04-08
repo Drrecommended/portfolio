@@ -36,9 +36,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-custom fixed-top navbar-expand-sm"
-    >
+    <nav class="navbar navbar-custom fixed-top navbar-expand-sm">
       <div class="navbar-brand">Navbar</div>
       <button
         class="navbar-toggler border-0 boot-button"
@@ -55,16 +53,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item ml-auto">
+          <li class="nav-item">
             <a class="nav-link text-white" href="#">Home</a>
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item">
             <a class="nav-link text-white" href="#projects">About</a>
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item">
             <a class="nav-link text-white" href="#about">Projects</a>
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item">
             <a class="nav-link text-white" href="#contact">Contact</a>
           </li>
         </ul>
@@ -74,35 +72,47 @@
       <div class="introduction-details">
         <h1 class="introduction">Hi, my name is...</h1>
         <div class="name-styling">Tyler French</div>
-        <p class="section__subtitle section__subtitle--intro">
-          Front-end developer
-        </p>
+        <p class="intro-sub">Front-end developer</p>
       </div>
     </section>
-    <section class="my-projects" id="projects">
+    <section class="about-section" id="about">
       <h2 class="header-title">About me</h2>
       <div class="about-me">
         <img class="pic-of-me" src="recources/smallMe.jpg" alt="" />
-        <ul class="tech-list">
-          <li class="technology">HTML5</li>
-          <li class="technology">CSS/SCSS</li>
-          <li class="technology">Javascipt</li>
-        </ul>
+        <div class="tech-info">
+          <h2 class="tech-title">Tech I use</h2>
+          <ul class="tech-list">
+            <li class="technology">HTML5</li>
+            <li class="technology">CSS/SCSS</li>
+            <li class="technology">Javascipt/React</li>
+            <li class="technology">Wordpress</li>
+          </ul>
+        </div>
         <p class="my-info">
-          I am a Web Developer from Las Vegas, Nevada with a working proficiency
-          in HTML, CSS, Sass, Javascript, Bootstrap, Jquery, Node.Js and Git
-          version control. I am familiar with SQL and NoSQL databases. I
-          graduated from PunchCode a front end web development bootcamp in 2020
-          and I have been pushing to better my job <br />
+          I am a Web Developer from Las Vegas, Nevada with working proficiency
+          in HTML, CSS, Sass, Javascript, Bootstrap, Jquery, Node.Js, and Git
+          version control. I am also familiar with SQL and NoSQL databases. I
+          graduated from PunchCode, a front-end-development-focused boot camp in
+          2020 and I am pursuing a career in technology. I am freelancing but
+          also looking for a more professional setting where I can learn the ins
+          and outs of project planning and development on a broader scale and
+          with a team. I believe with my current skill set I would be a great
+          asset to any company.<br />
           <br />
-          I am currently learning ReactJS and bettering my knowledge with APIs
+          I am currently learning ReactJS, Photoshop and bettering my knowledge
+          with APIs. My ideal work environment is a position where I am making a
+          positive impact on the planet or working in a music-related industry.
+          I am a performing DJ and record collector. I love fitness, I enjoy
+          cycling, calisthenics, and weight training. In my free time, I enjoy
+          feeding my brain with books and spending time with my wonderful
+          girlfriend and cat.
         </p>
         <a class="resume-link" href="#" download
           ><button>⬇︎ download resume ⬇︎</button></a
         >
       </div>
     </section>
-    <section id="about">
+    <section id="projects">
       <h2 class="header-title">Featured work</h2>
       <ul class="projects">
         <li>
@@ -270,16 +280,22 @@
         </li>
       </ul>
     </section>
-    <section class="scroll-container" id="contact">
+    <section id="contact">
       <h2 class="header-title">Get in touch</h2>
       <div id="form-body">
-        <form action="/submit" name="contact" action="POST" data-netlify="true">
+        <form
+          action="/submit"
+          id="contactForm"
+          name="contact"
+          action="POST"
+          data-netlify="true"
+        >
           <label for="name">Your name*</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Email*</label>
           <input type="text" id="email" name="email" required />
           <label for="sitename">Your website</label><br />
-          <input type="url" id="sitename" name="sitename" /><br />
+          <input type="text" id="sitename" name="sitename" /><br />
           <label for="message">Message</label>
           <textarea
             id="message"
@@ -309,6 +325,9 @@
         </li>
         <li>
           <a class="Fa" href=""><i class="fab fa-dev"></i></a>
+        </li>
+        <li>
+          <a class="Fa" href=""><i class="fab fa-twitter-square"></i></a>
         </li>
       </ul>
       <h3 class="copyright">TylerFrench.com ©</h3>
