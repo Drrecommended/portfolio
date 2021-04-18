@@ -57,10 +57,10 @@
             <a class="nav-link text-white" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#projects">About</a>
+            <a class="nav-link text-white" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#about">Projects</a>
+            <a class="nav-link text-white" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#contact">Contact</a>
@@ -78,35 +78,45 @@
     <section class="about-section" id="about">
       <h2 class="header-title">About me</h2>
       <div class="about-me">
-        <img class="pic-of-me" src="recources/smallMe.jpg" alt="" />
-        <div class="tech-info">
-          <h2 class="tech-title">Tech I use</h2>
-          <ul class="tech-list">
-            <li class="technology">HTML5</li>
-            <li class="technology">CSS/SCSS</li>
-            <li class="technology">Javascipt/React</li>
-            <li class="technology">Wordpress</li>
-          </ul>
+        <div class="top-flex">
+          <img class="pic-of-me" src="recources/smallMe.jpg" alt="" />
+          <div class="tech-info">
+            <h2 class="tech-title">Tech I use</h2>
+            <ul class="tech-list">
+              <li class="technology">HTML5</li>
+              <li class="technology">CSS<span>/</span>SCSS</li>
+              <li class="technology">Javascipt<span>/</span>React</li>
+              <li class="technology">Wordpress</li>
+            </ul>
+          </div>
         </div>
-        <p class="my-info">
-          I am a Web Developer from Las Vegas, Nevada with working proficiency
-          in HTML, CSS, Sass, Javascript, Bootstrap, Jquery, Node.Js, and Git
-          version control. I am also familiar with SQL and NoSQL databases. I
-          graduated from PunchCode, a front-end-development-focused boot camp in
-          2020 and I am pursuing a career in technology. I am freelancing but
-          also looking for a more professional setting where I can learn the ins
-          and outs of project planning and development on a broader scale and
-          with a team. I believe with my current skill set I would be a great
-          asset to any company.<br />
-          <br />
-          I am currently learning ReactJS, Photoshop and bettering my knowledge
-          with APIs. My ideal work environment is a position where I am making a
-          positive impact on the planet or working in a music-related industry.
-          I am a performing DJ and record collector. I love fitness, I enjoy
-          cycling, calisthenics, and weight training. In my free time, I enjoy
-          feeding my brain with books and spending time with my wonderful
-          girlfriend and cat.
-        </p>
+        <div class="bottom-flex">
+          <p class="my-info">
+            I am a Web Developer from Las Vegas, Nevada with working proficiency
+            in <span>HTML</span>, <span>CSS</span>, <span>Sass</span>,
+            <span>Javascript</span>, <span>Bootstrap</span>,
+            <span>Jquery</span>, <span>Node.Js</span>, and
+            <span>Git</span> version control. I am also familiar with
+            <span>SQL</span> and <span>NoSQL</span> databases. I graduated from
+            PunchCode, a front-end-development-focused boot camp in 2020 and I
+            am pursuing a career in technology. I am freelancing but also
+            looking for a more professional setting where I can learn the ins
+            and outs of project planning and development on a broader scale and
+            with a team. I believe with my current skill set I would be a great
+            asset to any company.<br />
+            <br />
+          </p>
+          <p class="my-info2">
+            I am currently bettering my knowledge with <span>ReactJS</span> and design with Adobe
+            <span>Photoshop</span> and <span>Illustrator</span>. My ideal work environment is a position
+            where I am making a positive impact on the planet or working in a
+            music-related industry. I am a performing DJ and record collector. I
+            love fitness, I enjoy cycling, calisthenics, and weight training. In
+            my free time, I enjoy feeding my brain with books and spending time
+            with my wonderful girlfriend and cat.
+          </p>
+        </div>
+
         <a class="resume-link" href="#" download
           ><button>⬇︎ download resume ⬇︎</button></a
         >
@@ -116,30 +126,10 @@
       <h2 class="header-title">Featured work</h2>
       <ul class="projects">
         <li>
-          <figure>
-            <img
-              class="project-image"
-              src="recources/space.png"
-              alt="Several friends doing a toast"
-            />
-            <figcaption><h3>Billions upon billions</h3></figcaption>
+          <figure class="figure">
+            <img src="recources/space.png" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
           </figure>
-          <p>
-            This is a media player I designed using HTML5, CSS, and vanilla
-            Javascipt. You can cycle through songs, skip to different parts of
-            the song as well as mute and control volume.
-          </p>
-          <div class="project-links">
-            <a
-              target="_blank"
-              href="https://drrecommended.github.io/my-media-player/"
-              ><button>visit website</button></a
-            >
-            <a
-              target="_blank"
-              href="https://drrecommended.github.io/my-media-player/"
-              ><button>visit Github</button></a
-            >
           </div>
         </li>
         <li>
@@ -306,6 +296,7 @@
           <button>Submit</button>
         </form>
       </div>
+      
     </section>
     <footer class="footer">
       <ul class="footer-links">
@@ -313,21 +304,29 @@
           <a
             class="Fa"
             target="_blank"
+            name="linkedin-link"
             href="https://www.linkedin.com/in/drrecommended/"
           >
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a class="Fa" target="_blank" href="https://github.com/Drrecommended">
+          <a
+            class="Fa"
+            target="_blank"
+            name="github-link"
+            href="https://github.com/Drrecommended"
+          >
             <i class="fab fa-github"></i
           ></a>
         </li>
         <li>
-          <a class="Fa" href=""><i class="fab fa-dev"></i></a>
+          <a class="Fa" href="" name="dev-link"><i class="fab fa-dev"></i></a>
         </li>
         <li>
-          <a class="Fa" href=""><i class="fab fa-twitter-square"></i></a>
+          <a class="Fa" href="" name="twitter-link"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
         </li>
       </ul>
       <h3 class="copyright">TylerFrench.com ©</h3>

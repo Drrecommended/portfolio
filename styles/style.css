@@ -38,21 +38,23 @@
 }
 
 button {
+  color: black;
   background: none;
-  color: #90afc5;
   border: 2px solid;
   padding: 1em 2em;
   font-size: 1em;
   transition: all 0.25s;
   white-space: nowrap;
+  border-radius: 3px;
 }
 
 button:hover {
-  border-color: #763626;
-  color: #763626;
+  background-color: #142b32;
+  color: white;
   box-shadow: 0 0.5em 0.5em -0.4em;
   transform: translateY(-0.1em);
   cursor: pointer;
+  border-radius: 3px;
 }
 
 section {
@@ -70,8 +72,8 @@ h3 {
 .header-title {
   background-color: #90afc5;
   border: 2px solid white;
-  font-size: 1.5em;
-  font-weight: 800;
+  font-size: 1.7em;
+  font-weight: bold;
   color: black;
   text-align: center;
   margin: auto;
@@ -175,8 +177,6 @@ nav .navbar-brand {
 .about-me {
   display: grid;
   margin: auto;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   background-color: white;
   border-radius: 3px;
   overflow: auto;
@@ -184,27 +184,12 @@ nav .navbar-brand {
 
 .about-me .pic-of-me {
   border-radius: 50%;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
   width: 90%;
   display: none;
   min-width: 20rem;
   max-width: 20rem;
   box-shadow: -6px 10px 20px 3px rgba(0, 0, 0, 0.61);
-}
-
-.about-me .my-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 25px;
-  font-size: 1.2em;
-  height: 100%;
-  color: #2a3132;
-  line-height: 26px;
-  text-indent: 30px;
-  margin: 0;
 }
 
 .about-me .tech-info {
@@ -213,33 +198,84 @@ nav .navbar-brand {
 
 .about-me .tech-title {
   text-align: center;
-  text-decoration: underline;
+  font-family: "Titillium Web", sans-serif;
+  color: #142b32;
+  font-size: 2.8em;
   margin: auto;
   margin-top: 30px;
   font-weight: bolder;
   letter-spacing: 2px;
+  position: relative;
+}
+
+.about-me .tech-title:after {
+  display: block;
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: #90afc5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 7px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-me .tech-list {
   margin: auto;
-  margin-top: 10px;
+  justify-content: center;
+  margin-top: 45px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 94%;
 }
 
 .about-me .tech-list .technology {
   background-color: lightgrey;
+  border: #2a3132 1px solid;
   width: fit-content;
   padding: 5px;
   margin: 10px;
   border-radius: 2px;
 }
 
+.about-me .tech-list .technology span {
+  color: #763626;
+}
+
+.about-me .bottom-flex {
+  overflow: auto;
+  padding: 60px 25px 0px;
+}
+
+.about-me .bottom-flex span {
+  color: #763626;
+  font-weight: bold;
+}
+
+.about-me .bottom-flex .my-info {
+  font-size: 1.2em;
+  color: #2a3132;
+  line-height: 26px;
+  text-indent: 30px;
+  margin: 0;
+}
+
+.about-me .bottom-flex .my-info2 {
+  display: block;
+  font-size: 1.2em;
+  color: #2a3132;
+  line-height: 26px;
+  text-indent: 30px;
+  margin: 0;
+}
+
 .about-me .resume-link {
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin: auto;
-  margin-bottom: 20px;
 }
 
 #projects {
@@ -416,45 +452,58 @@ form {
   }
 }
 
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 576px) {
+  .about-me {
+    padding-top: 70px;
+  }
   .about-me .pic-of-me {
-    display: inline;
-    margin-top: 50px;
+    display: block;
+    margin: auto;
   }
   .about-me .tech-list {
+    width: 100%;
     justify-content: center;
+  }
+  .about-me .bottom-flex {
+    margin: auto;
   }
 }
 
 @media screen and (min-width: 800px) {
   .about-me {
     max-width: 1450px;
-    grid-template-columns: 30% 20% 30% 1fr;
-    grid-template-rows: 20% 20% 50% 1fr;
-    grid-template-areas: "me me tech tech ." "me me tech tech ." "info info info info info" "resume resume resume resume resume";
   }
-  .about-me .pic-of-me {
-    grid-area: me;
-    margin-top: 110px;
-    margin-left: 20%;
+  .about-me .top-flex {
+    display: flex;
   }
-  .about-me .my-info {
-    grid-area: info;
-    margin: auto;
-    margin-top: 30px;
-    width: 90%;
+  .about-me .top-flex .pic-of-me {
+    margin-left: 10%;
   }
-  .about-me .tech-info {
-    grid-area: tech;
-    margin-top: 130px;
-    margin-left: 50px;
-    margin-right: 40%;
-  }
-  .about-me .resume-link {
-    grid-area: resume;
+  .about-me .top-flex .tech-info {
+    margin-right: 8%;
+    padding-left: 40px;
   }
   #form-body {
     max-width: 1400px;
+  }
+}
+
+@media screen and (min-width: 1125px) {
+  .pic-of-me {
+    margin-left: 15% !important;
+  }
+  .tech-info {
+    margin-right: 12% !important;
+  }
+  .bottom-flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .bottom-flex .my-info {
+    width: 45%;
+  }
+  .bottom-flex .my-info2 {
+    width: 45%;
   }
 }
 /*# sourceMappingURL=style.css.map */
