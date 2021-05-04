@@ -15,8 +15,8 @@ $outline: #763626;
 $regFont: 300;
 $boldFont: 900;
 $h1: 3rem;
-$h2: 2.25rem;
-$h3: 1.25rem;
+$h2: 1.8rem;
+$h3: 1.8rem;
 $body: 1.5rem;
 $swirl-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Ccircle stroke='%23763626' vector-effect='non-scaling-stroke' id='a' fill='none' stroke-width='8.6' r='315'/%3E%3Cuse id='f' href='%23a' stroke-dasharray='100 100 100 9999'/%3E%3Cuse id='b' href='%23a' stroke-dasharray='250 250 250 250 250 9999'/%3E%3Cuse id='e' href='%23a' stroke-dasharray='1000 500 1000 500 9999'/%3E%3Cuse id='g' href='%23a' stroke-dasharray='1500 9999'/%3E%3Cuse id='h' href='%23a' stroke-dasharray='2000 500 500 9999'/%3E%3Cuse id='j' href='%23a' stroke-dasharray='800 800 800 800 800 9999'/%3E%3Cuse id='k' href='%23a' stroke-dasharray='1200 1200 1200 1200 1200 9999'/%3E%3Cuse id='l' href='%23a' stroke-dasharray='1600 1600 1600 1600 1600 9999'/%3E%3C/defs%3E%3Cg transform='translate(1000 750)' %3E%3Cg transform='rotate(201.6 0 0)' %3E%3Ccircle fill='%23763626' r='10'/%3E%3Cg transform='rotate(-132 0 0)'%3E%3Cuse href='%23f' transform='scale(.1) rotate(50 0 0)' /%3E%3Cuse href='%23f' transform='scale(.2) rotate(100 0 0)' /%3E%3Cuse href='%23f' transform='scale(.3) rotate(150 0 0)' /%3E%3C/g%3E%3Cg transform='rotate(-22.8 0 0)'%3E%3Cuse href='%23b' transform='scale(.4) rotate(200 0 0)' /%3E%3Cuse href='%23z' transform='scale(.5) rotate(250 0 0)' /%3E%3C/g%3E%3Cg id='z' transform='rotate(59.4 0 0)'%3E%3Cg transform='rotate(126 0 0)'%3E%3Cuse href='%23b'/%3E%3Cuse href='%23b' transform='scale(1.2) rotate(90 0 0)' /%3E%3Cuse href='%23b' transform='scale(1.4) rotate(60 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.6) rotate(120 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.8) rotate(30 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg id='y' transform='rotate(102.6 0 0)'%3E%3Cg transform='rotate(75.6 0 0)'%3E%3Cuse href='%23e' transform='scale(1.1) rotate(20 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.3) rotate(-40 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.5) rotate(60 0 0)' /%3E%3Cuse href='%23h' transform='scale(1.7) rotate(-80 0 0)' /%3E%3Cuse href='%23j' transform='scale(1.9) rotate(100 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg transform='rotate(-151.2 0 0)'%3E%3Cg transform='rotate(-59.4 0 0)'%3E%3Cg transform='rotate(-136.8 0 0)'%3E%3Cuse href='%23h' transform='scale(2) rotate(60 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.1) rotate(120 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.3) rotate(180 0 0)'/%3E%3Cuse href='%23h' transform='scale(2.4) rotate(240 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.5) rotate(300 0 0)'/%3E%3C/g%3E%3Cuse href='%23y' transform='scale(2) rotate(180 0 0)' /%3E%3Cuse href='%23j' transform='scale(2.7)'/%3E%3Cuse href='%23j' transform='scale(2.8) rotate(45 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.9) rotate(90 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.1) rotate(135 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.2) rotate(180 0 0)'/%3E%3C/g%3E%3Cuse href='%23k' transform='scale(3.3) rotate(225 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.5) rotate(270 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.6) rotate(315 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.7)'/%3E%3Cuse href='%23k' transform='scale(3.9) rotate(75 0 0)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
@@ -54,16 +54,23 @@ $swirl-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/
   background-color: $light;
 }
 
+a:hover {
+  text-decoration: none;
+}
 
 button {
   color: $dark2;
   background: none;
   border: 2px solid;
-  padding: 1em 2em;
+  padding: .5em 1.5em;
   font-size: 1em;
   transition: all 0.25s;
   white-space: nowrap;
   border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   &:hover {
     background-color: $dark2;
     color: white;
@@ -88,7 +95,7 @@ button {
 }
 
 section {
-  padding: 4em 1em;
+  padding: 2em 1em;
   height: 100vh;
   width: 100%;
   overflow: auto;
@@ -100,19 +107,18 @@ h3 {
 }
 
 .header-title {
-  background-color: $light;
-  border: 2px solid white;
-  font-size: 1.7em;
-  font-weight: bold;
-  color: black;
+  font-family: "Titillium Web", sans-serif;
   text-align: center;
+  position: relative;
+  font-size: $h1;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: 2px $dark2; /* width and color */
   margin: auto;
   margin-bottom: 50px;
-  padding: 10px;
   border-radius: 3px;
   max-width: 400px;
-  white-space: nowrap;
-  box-shadow: 0 0 20px #00000028;
+  letter-spacing: 5px;
 }
 
 a:visited {
@@ -136,6 +142,7 @@ a:visited {
 
 .nav-item {
   transition: all 0.25s;
+  font-size: 1.3rem;
 }
 
 .nav-item:hover {
@@ -206,6 +213,7 @@ nav .navbar-brand {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  padding-bottom: 80px;
 }
 
 .about-me {
@@ -216,32 +224,29 @@ nav .navbar-brand {
   overflow: auto;
   box-shadow: 0 0 20px #00000028;
   .pic-of-me {
-    border-radius: 50%;
     justify-content: center;
-    width: 90%;
     display: none;
-    min-width: 20rem;
+    padding-top: 70px;
+    min-width: 25rem;
     max-width: 20rem;
-    -webkit-box-shadow: -6px 10px 20px 3px rgba(0, 0, 0, 0.61);
-    box-shadow: -6px 10px 20px 3px rgba(0, 0, 0, 0.61);
   }
   .tech-info {
     margin: auto;
+    margin-top: 38px;
   }
   .tech-title {
     text-align: center;
     font-family: "Titillium Web", sans-serif;
     color: $dark2;
-    font-size: 2.8em;
+    font-size: 1.8rem;
     margin: auto;
-    margin-top: 30px;
-    font-weight: bolder;
+    margin-top: 50px;
     letter-spacing: 2px;
     position: relative;
     &:after {
       display: block;
       content: "";
-      width: 40%;
+      width: 50%;
       height: 2px;
       background: $light;
       position: absolute;
@@ -249,18 +254,18 @@ nav .navbar-brand {
       left: 0;
       right: 0;
       margin-top: 7px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: auto;
     }
   }
   .tech-list {
     margin: auto;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 30px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     width: 94%;
+    padding-bottom: 20px;
     .technology {
       background-color: lightgrey;
       border: $dark 1px solid;
@@ -276,7 +281,7 @@ nav .navbar-brand {
 
   .bottom-flex {
     overflow: auto;
-    padding: 60px 25px 0px;
+    padding: 10px 25px 0px;
     span {
       color: $outline;
       font-weight: bold;
@@ -315,13 +320,12 @@ nav .navbar-brand {
   background-color: $dark2;
   height: 100%;
   .item {
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 690px;
     margin: 0 auto;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     &:hover .left .img img {
       transform: scale(1.1);
       z-index: 1;
@@ -365,27 +369,23 @@ nav .navbar-brand {
     }
     .right {
       flex: 1;
-      margin-left: -75px;
       background-color: white;
-      padding: 3.5rem 2rem;
+      padding: 1.5rem 0.7rem;
       border-radius: 2px;
       box-shadow: 0 0 20px #00000028;
       z-index: 2;
-      // border: 2px solid;
-      // border-image: linear-gradient(135deg, $outline 50%, white) 1;
-
       .project-title {
         font-family: "Titillium Web", sans-serif;
         color: $dark2;
-        font-size: 2.8em;
-        margin: auto;
+        font-size: $h2;
         font-weight: bolder;
         letter-spacing: 2px;
         position: relative;
+        display: inline;
         &:after {
           display: block;
           content: "";
-          width: 50%;
+          width: 100px;
           height: 2px;
           background: $light;
           position: absolute;
@@ -397,16 +397,15 @@ nav .navbar-brand {
       }
       .project-sub-title {
         color: $dark2;
-        font-size: 1.6rem;
+        font-size: $h3;
         margin-bottom: 2rem;
       }
       .project-description {
         color: $dark;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
       }
     }
   }
-
 }
 
 //Form section styling
@@ -414,8 +413,11 @@ nav .navbar-brand {
 #form-body {
   background-color: white;
   border-radius: 5px 20px 5px;
-  margin-top: 5%;
-  margin: auto;
+}
+
+label {
+  color: $dark2;
+  font-size: $h3;
 }
 
 input[type="url"] {
@@ -455,6 +457,18 @@ input[type="submit"]:hover {
   background-color: $outline;
 }
 
+input:focus {
+  outline: none !important;
+  border: 1px solid $outline;
+  position: relative;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 1px solid $outline;
+  position: relative;
+}
+
 .check {
   color: $outline;
 }
@@ -476,13 +490,26 @@ input[type="submit"]:hover {
 }
 
 form {
-  padding: 40px;
+  padding: 10%;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+.info-box {
+  display: none;
+  margin: 50px;
 }
 
 //Footer styling
 
 .footer {
-  height: 20vh;
+  height: 20%;
   background-color: $dark2;
   .footer-links {
     width: 70%;
@@ -490,7 +517,7 @@ form {
     list-style: none;
     justify-content: space-evenly;
     margin: auto;
-    padding-top: 4%;
+    padding-top: 1%;
     .Fa {
       color: white !important;
       font-size: 30px;
@@ -498,8 +525,8 @@ form {
   }
 
   .copyright {
-    font-size: $h3;
-    padding-top: 1.5%;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
     color: white;
     text-align: center;
   }
@@ -555,7 +582,6 @@ form {
 
 @media screen and (min-width: 576px) {
   .about-me {
-    padding-top: 70px;
     .pic-of-me {
       display: block;
       margin: auto;
@@ -569,35 +595,41 @@ form {
       margin: auto;
     }
   }
+  .right {
+    padding: 1.5rem 1.7rem !important;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .about-me {
     max-width: 1450px;
-
     .top-flex {
       display: flex;
       .pic-of-me {
-        margin-left: 10%;
-      }
-      .tech-info {
-        margin-right: 8%;
-        padding-left: 40px;
+        margin-left: 5%;
       }
     }
   }
+  .all-items {
+    max-width: 1525px;
+    margin: auto;
+  }
+  .container2 {
+    max-width: 1525px;
+  }
 
   #form-body {
-    max-width: 1400px;
+    max-width: 700px;
   }
 }
 
 @media screen and (min-width: 1125px) {
   .pic-of-me {
-    margin-left: 15% !important;
+    margin-left: 10% !important;
+    padding-bottom: 45px;
   }
   .tech-info {
-    margin-right: 12% !important;
+    margin-top: 68px !important;
   }
   .bottom-flex {
     display: flex;
@@ -608,5 +640,8 @@ form {
     .my-info2 {
       width: 45%;
     }
+  }
+  .info-box {
+    display: block;
   }
 }
