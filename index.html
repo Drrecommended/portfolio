@@ -75,7 +75,7 @@
     <section class="intro" id="home">
       <div class="introduction-details">
         <h1 class="introduction">Hi, my name is...</h1>
-        <div class="name-styling">Tyler French</div>
+        <div class="name-styling">Tyler GAFrench</div>
         <p class="intro-sub">Front-end developer</p>
       </div>
     </section>
@@ -668,18 +668,23 @@
       <div class="container2">
         <div id="form-body">
           <form
-            action="/submit"
+            action="https://formsubmit.co/tylerfrench89@gmail.com"
             id="contactForm"
             name="contact"
-            action="POST"
+            method="POST"
             data-netlify="true"
           >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://tylerfrench.tech/pages/thankyou.html"
+            />
             <label for="name">Your name*</label>
             <input type="text" id="name" name="name" required />
             <label for="email">Email*</label>
             <input type="text" id="email" name="email" required />
-            <label for="sitename">Your website</label><br />
-            <input type="text" id="sitename" name="sitename" /><br />
+            <label for="website">Your website</label><br />
+            <input type="text" id="website" name="website" /><br />
             <label for="message">Message</label>
             <textarea
               id="message"
