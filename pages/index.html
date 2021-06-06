@@ -668,16 +668,13 @@
       <div class="container2">
         <div id="form-body">
           <form id="contactForm" name="contact">
-            <label for="name">Your name*</label>
-            <input type="text" id="name" name="name" required />
-            <label for="email">Email*</label>
-            <input type="text" id="email" name="email" required />
-            <label for="subject">Subject</label><br />
-            <input type="text" id="subject" name="subject" /><br />
-            <label for="message">Message</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <input type="text" id="email" name="email" placeholder="Your email" required />
+            <input type="text" id="subject" name="subject" placeholder="Subject"/><br />
             <textarea
               id="message"
-              placeholder="message"
+              name="message"
+              placeholder="Send me a message"
               cols="30"
               rows="8"
               required
