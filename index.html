@@ -667,10 +667,27 @@
       <h2 class="header-title">Get in touch</h2>
       <div class="container2">
         <div id="form-body">
-          <form id="contactForm" name="contact">
-            <input type="text" id="name" name="name" placeholder="Your name" required />
-            <input type="text" id="email" name="email" placeholder="Your email" required />
-            <input type="text" id="subject" name="subject" placeholder="Subject"/><br />
+          <form id="contactForm" name="contact" action="https://formspree.io/f/xpzkdvow" method="POST">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            /><br />
             <textarea
               id="message"
               name="message"
@@ -679,9 +696,10 @@
               rows="8"
               required
             ></textarea>
-            <button type="submit" class="submit" value="send message">
+            <button type="submit" class="submit" value="send">
               Submit
             </button>
+            <p id="form-status"></p>
           </form>
         </div>
         <svg
@@ -949,15 +967,9 @@
       <h3 class="copyright">TylerFrench.com ©</h3>
     </footer>
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="javascript/index.js"></script>
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
