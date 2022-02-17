@@ -62,7 +62,7 @@ button {
   color: $dark2;
   background: none;
   border: 2px solid;
-  padding: 0.5em 1.5em;
+  padding: .5em 1.5em;
   font-size: 1em;
   transition: all 0.25s;
   white-space: nowrap;
@@ -431,16 +431,17 @@ input[type="url"] {
   opacity: 0.75;
 }
 
-input,
+input[type="text"],
+select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: none;
-  border-bottom: 1px solid $light;
+  border: 1px solid $light;
+  border-radius: 4px;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-//   box-shadow: inset 0 0.0625em 0.125em rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0.0625em 0.125em rgba(0, 0, 0, 0.2);
 }
 
 input[type="submit"] {
@@ -458,7 +459,7 @@ input[type="submit"]:hover {
 
 input:focus {
   outline: none !important;
-  border-bottom: 1px solid $outline;
+  border: 1px solid $outline;
   position: relative;
 }
 
@@ -468,6 +469,13 @@ textarea:focus {
   position: relative;
 }
 
+.check {
+  color: $outline;
+}
+
+.hire {
+  padding: 12px;
+}
 
 /* Add a background color and some padding around the form */
 
